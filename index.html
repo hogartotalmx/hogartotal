@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HogarTotal | Fumigación y Remodelación</title>
+<meta name="description" content="HogarTotal: fumigación, control de plagas, impermeabilizante y remodelación de casas. Trabajos reales, cotización por WhatsApp.">
+<meta property="og:title" content="HogarTotal | Fumigación y Remodelación">
+<meta property="og:description" content="Fumigación y remodelación: control de plagas, albañilería, impermeabilizante, pintura, loseta, aluminio y vidrio. Cotiza por WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hogartotalmx.github.io/hogartotal/">
+<meta property="og:image" content="https://hogartotalmx.github.io/hogartotal/img/grafico.jpg">
+<link rel="icon" href="img/icono.jpg">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0d120e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"HogarTotal","image":"https://hogartotalmx.github.io/hogartotal/img/grafico.jpg","url":"https://hogartotalmx.github.io/hogartotal/","telephone":"+52 55 8836 0142","description":"Fumigación, control de plagas y remodelación de casas."}
+</script>
+<style>
+:root{
+  --ink:#0d120e; --panel:#131a15; --cream:#f4f7ee; --mut:#a9b8a4;
+  --lime:#a3e635; --red:#e02424; --wa:#25d366; --line:rgba(163,230,53,.16);
+  --shadow:0 24px 60px rgba(0,0,0,.45); --radius:22px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden;overflow-x:clip}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--ink);color:var(--cream);line-height:1.6;overflow-x:hidden;overflow-x:clip}
+img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:'Fraunces',serif;line-height:1.08}
+h2{font-size:clamp(2rem,5vw,3rem);font-weight:900;letter-spacing:-.01em}
+.sec{padding:92px 0}
+.sec-head{max-width:720px;margin-bottom:42px}
+.sec-head .kicker{display:inline-block;font-weight:800;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--lime);border:1px solid var(--line);padding:6px 14px;border-radius:999px;margin-bottom:16px;background:rgba(163,230,53,.06)}
+.sec-head p{color:var(--mut);margin-top:10px;font-size:1.05rem}
+.btn{display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:1rem;padding:15px 28px;border-radius:999px;text-decoration:none;border:0;cursor:pointer;transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:var(--wa);color:#06280f;box-shadow:0 12px 30px rgba(37,211,102,.35)}
+.btn-lime{background:var(--lime);color:#131a05;box-shadow:0 12px 30px rgba(163,230,53,.28)}
+.btn-ghost{background:rgba(255,255,255,.08);color:var(--cream);border:1px solid rgba(255,255,255,.25)}
+header{position:fixed;inset:0 0 auto 0;z-index:60;transition:background .3s,box-shadow .3s}
+header.scrolled{background:rgba(13,18,14,.92);box-shadow:0 10px 34px rgba(0,0,0,.5)}
+.nav{display:flex;align-items:center;gap:18px;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--cream);font-family:'Fraunces',serif;font-weight:900;font-size:1.45rem}
+.brand img{width:52px;height:52px;border-radius:14px;object-fit:cover;box-shadow:0 8px 22px rgba(0,0,0,.5)}
+.brand small{display:block;font-family:'Inter',sans-serif;font-weight:700;font-size:.6rem;letter-spacing:.24em;color:var(--lime)}
+.links{margin-left:auto;display:flex;gap:26px}
+.links a{color:var(--cream);text-decoration:none;font-weight:600;font-size:.95rem;opacity:.85}
+.links a:hover{opacity:1;color:var(--lime)}
+.nav .btn{padding:11px 22px;font-size:.92rem}
+@media(max-width:820px){.links{display:none}}
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+.slides{position:absolute;inset:0}
+.slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.4s ease}
+.slide.on{opacity:1}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,18,14,.55) 0%,rgba(13,18,14,.25) 40%,rgba(13,18,14,.94) 88%)}
+.hero .inner{position:relative;z-index:2;padding:130px 0 64px;width:100%}
+.hero .logo-card{display:inline-block;background:rgba(244,247,238,.97);border-radius:26px;padding:14px;box-shadow:var(--shadow);margin-bottom:26px}
+.hero .logo-card img{width:150px;height:150px;object-fit:cover;border-radius:18px}
+.hero h1{font-size:clamp(2.5rem,7vw,4.6rem);font-weight:900;max-width:800px;text-shadow:0 6px 34px rgba(0,0,0,.5)}
+.hero h1 em{font-style:normal;color:var(--lime)}
+.hero p.sub{max-width:620px;color:#dfe8d8;font-size:1.13rem;margin:18px 0 28px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.dots{display:flex;gap:8px;margin-top:34px}
+.dot{width:34px;height:5px;border-radius:99px;background:rgba(255,255,255,.28);border:0;cursor:pointer;transition:background .3s}
+.dot.on{background:var(--lime)}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.badge{font-size:.82rem;font-weight:700;padding:8px 15px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18)}
+@keyframes slideL{from{opacity:0;transform:translateX(-46px)}to{opacity:1;transform:none}}
+.load-l{animation:slideL .95s cubic-bezier(.16,.68,.24,1) both}
+.rv-l,.rv-r{opacity:0;transition:opacity .85s cubic-bezier(.16,.68,.24,1),transform .85s cubic-bezier(.16,.68,.24,1)}
+.rv-l{transform:translateX(-84px)} .rv-r{transform:translateX(84px)}
+.rv-l.in,.rv-r.in{opacity:1;transform:none}
+@media(max-width:760px){.rv-l{transform:translateX(-40px)}.rv-r{transform:translateX(40px)}}
+@media(prefers-reduced-motion:reduce){.rv-l,.rv-r,.load-l{transition:none;animation:none;opacity:1;transform:none}}
+.strip{border-block:1px solid var(--line);background:var(--panel);padding:20px 0}
+.strip .row{display:flex;gap:38px;flex-wrap:wrap;justify-content:center;font-weight:800;letter-spacing:.14em;font-size:.8rem;text-transform:uppercase;color:var(--mut)}
+.strip b{color:var(--lime)}
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+@media(max-width:860px){.feature{grid-template-columns:1fr}}
+.feature .photo{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);position:relative}
+.feature .photo>img{width:100%;height:520px;object-fit:cover}
+.feature .logo-float{position:absolute;right:18px;bottom:18px;width:118px;height:118px;border-radius:20px;object-fit:cover;border:4px solid var(--cream);box-shadow:var(--shadow)}
+.pests{display:flex;gap:9px;flex-wrap:wrap;margin:18px 0 26px}
+.pest{font-weight:700;font-size:.88rem;padding:9px 16px;border-radius:999px;background:rgba(224,36,36,.1);border:1px solid rgba(224,36,36,.35);color:#ffb4b4}
+.checks{list-style:none;margin:6px 0 24px}
+.checks li{padding:7px 0 7px 32px;position:relative;color:#d7e2d0}
+.checks li::before{content:'✓';position:absolute;left:0;top:6px;width:22px;height:22px;border-radius:50%;background:var(--lime);color:#131a05;font-weight:800;font-size:.8rem;display:flex;align-items:center;justify-content:center}
+.ad{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+@media(max-width:760px){.ad{grid-template-columns:1fr}}
+.ad figure{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.ad img{width:100%;height:380px;object-fit:cover;cursor:pointer}
+.ad figcaption{position:absolute;left:16px;top:16px;font-weight:800;letter-spacing:.14em;font-size:.75rem;text-transform:uppercase;padding:8px 15px;border-radius:999px;background:rgba(13,18,14,.82);color:var(--cream)}
+.ad .despues figcaption{background:var(--lime);color:#131a05}
+.grid-srv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:960px){.grid-srv{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.grid-srv{grid-template-columns:1fr}}
+.srv{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .35s,box-shadow .35s}
+.srv:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.srv img{width:100%;height:210px;object-fit:cover}
+.srv .cb{padding:22px}
+.srv h3{font-size:1.28rem;margin-bottom:8px}
+.srv p{color:var(--mut);font-size:.95rem}
+.grid-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media(max-width:960px){.grid-steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.grid-steps{grid-template-columns:1fr}}
+.step{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px}
+.step .n{font-family:'Fraunces',serif;font-weight:900;font-size:2.4rem;color:var(--lime);line-height:1}
+.step h3{margin:12px 0 8px;font-size:1.15rem}
+.step p{color:var(--mut);font-size:.93rem}
+.filtros{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.fbtn{font:inherit;font-weight:700;font-size:.9rem;padding:10px 20px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--cream);cursor:pointer;transition:all .25s}
+.fbtn.on{background:var(--lime);color:#131a05;border-color:var(--lime)}
+.grid-gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media(max-width:960px){.grid-gal{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:620px){.grid-gal{grid-template-columns:repeat(2,1fr)}}
+.grid-gal figure{position:relative;border-radius:16px;overflow:hidden;cursor:pointer}
+.grid-gal img{width:100%;height:230px;object-fit:cover;transition:transform .5s}
+.grid-gal figure:hover img{transform:scale(1.06)}
+.grid-gal figcaption{position:absolute;inset:auto 0 0 0;padding:26px 14px 12px;font-size:.82rem;font-weight:700;background:linear-gradient(transparent,rgba(13,18,14,.88))}
+.grid-gal .hide{display:none}
+.faq{max-width:820px}
+.faq-item{border:1px solid var(--line);border-radius:16px;margin-bottom:12px;background:var(--panel);overflow:hidden}
+.faq-q{width:100%;text-align:left;background:none;border:0;color:var(--cream);font:inherit;font-weight:700;font-size:1.02rem;padding:20px 22px;cursor:pointer;display:flex;justify-content:space-between;gap:14px;align-items:center}
+.faq-q span{color:var(--lime);font-size:1.3rem;transition:transform .3s}
+.faq-item.open .faq-q span{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.faq-a p{padding:0 22px 20px;color:var(--mut)}
+.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:44px;align-items:start}
+@media(max-width:860px){.contact{grid-template-columns:1fr}}
+form{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:30px}
+.field{margin-bottom:18px}
+label{display:block;font-weight:700;font-size:.9rem;margin-bottom:8px}
+input,select,textarea{width:100%;font:inherit;padding:14px 16px;border-radius:12px;border:1px solid var(--line);background:var(--ink);color:var(--cream)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--lime);border-color:transparent}
+.big-wa{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(1.7rem,4.5vw,2.4rem);color:var(--cream);text-decoration:none}
+.big-wa:hover{color:var(--lime)}
+footer{border-top:1px solid var(--line);padding:38px 0;text-align:center;color:var(--mut)}
+footer strong{color:var(--cream)}
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:70;width:62px;height:62px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;font-size:1.7rem;text-decoration:none;box-shadow:0 14px 34px rgba(37,211,102,.45)}
+.lightbox{position:fixed;inset:0;z-index:90;background:rgba(5,8,6,.94);display:none;align-items:center;justify-content:center;padding:22px}
+.lightbox.on{display:flex}
+.lightbox img{max-height:88vh;border-radius:14px;box-shadow:var(--shadow)}
+</style>
+</head>
+<body>
+<header id="hdr">
+  <div class="wrap nav">
+    <a class="brand" href="#inicio"><img src="img/icono.jpg" alt="Logotipo de HogarTotal"><span>HogarTotal<small>FUMIGACIÓN · REMODELACIÓN</small></span></a>
+    <nav class="links">
+      <a href="#fumigacion">Fumigación</a>
+      <a href="#impermeabilizante">Impermeabilizante</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#trabajos">Trabajos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-wa" href="https://wa.me/525588360142?text=Hola%2C%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener">💬 Cotizar</a>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="slides">
+    <img class="slide on" src="img/fumigacion-1.jpg" alt="Técnico fumigando exteriores">
+    <img class="slide" src="img/fumigacion-4.jpg" alt="Fumigación de patio interior">
+    <img class="slide" src="img/fumigacion-3.jpg" alt="Fumigación de jardín de casa">
+    <img class="slide" src="img/fumigacion-2.jpg" alt="Fumigación de áreas comunes">
+    <img class="slide" src="img/fumigacion-5.jpg" alt="Servicio de fumigación a domicilio">
+  </div>
+  <div class="shade"></div>
+  <div class="wrap inner">
+    <div class="logo-card load-l"><img src="img/grafico.jpg" alt="HogarTotal, control de plagas"></div>
+    <h1 class="load-l" style="animation-delay:.1s">Tu hogar <em>sin plagas</em> y como nuevo</h1>
+    <p class="sub load-l" style="animation-delay:.2s">Fumigación profesional y remodelación de casas con trabajos reales que nos respaldan. Cotiza por WhatsApp y te atendemos de inmediato.</p>
+    <div class="cta load-l" style="animation-delay:.3s">
+      <a class="btn btn-wa" href="https://wa.me/525588360142?text=Hola%2C%20quiero%20una%20cotizaci%C3%B3n%20de%20fumigaci%C3%B3n%20o%20remodelaci%C3%B3n" target="_blank" rel="noopener">💬 Pedir cotización</a>
+      <a class="btn btn-ghost" href="#trabajos">Ver trabajos reales</a>
+    </div>
+    <div class="badges load-l" style="animation-delay:.4s">
+      <span class="badge">🏠 Casas y negocios</span>
+      <span class="badge">🌿 Jardines y áreas comunes</span>
+      <span class="badge">📋 Cotización sin compromiso</span>
+    </div>
+    <div class="dots" id="dots"></div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap row">
+    <span><b>●</b> Fumigación</span><span><b>●</b> Impermeabilizante</span><span><b>●</b> Albañilería</span><span><b>●</b> Pintura</span><span><b>●</b> Loseta</span><span><b>●</b> Aluminio y vidrio</span>
+  </div>
+</div>
+
+<section class="sec" id="fumigacion">
+  <div class="wrap feature">
+    <div class="photo rv-l">
+      <img src="img/fumigacion-4.jpg" alt="Fumigación profesional de patio">
+      <img class="logo-float" src="img/grafico.jpg" alt="Control de plagas HogarTotal">
+    </div>
+    <div class="rv-r">
+      <div class="sec-head" style="margin-bottom:0">
+        <span class="kicker">Fumigación</span>
+        <h2>Control de plagas profesional</h2>
+      </div>
+      <ul class="checks">
+        <li>Fumigación de casas, negocios y restaurantes</li>
+        <li>Jardines, patios y áreas comunes de fraccionamientos</li>
+        <li>Equipo de protección y aplicación profesional</li>
+        <li>Tratamiento según la plaga y el espacio</li>
+      </ul>
+      <h3 style="margin-bottom:4px">Plagas que combatimos</h3>
+      <div class="pests">
+        <span class="pest">Cucarachas</span><span class="pest">Hormigas</span><span class="pest">Moscas</span><span class="pest">Mosquitos</span><span class="pest">Arañas</span><span class="pest">Pulgas</span><span class="pest">Termitas</span>
+      </div>
+      <a class="btn btn-wa" href="https://wa.me/525588360142?text=Hola%2C%20quiero%20cotizar%20una%20fumigaci%C3%B3n" target="_blank" rel="noopener">💬 Cotizar fumigación</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="impermeabilizante" style="background:var(--panel)">
+  <div class="wrap">
+    <div class="sec-head rv-l">
+      <span class="kicker">Impermeabilizante</span>
+      <h2>Azoteas protegidas, sin goteras</h2>
+      <p>Así se ve una azotea antes y después de nuestro trabajo de impermeabilización.</p>
+    </div>
+    <div class="ad">
+      <figure class="rv-l"><img src="img/azotea-antes.jpg" alt="Azotea con impermeabilizante desgastado"><figcaption>Antes</figcaption></figure>
+      <figure class="despues rv-r"><img src="img/azotea-domo.jpg" alt="Azotea recién impermeabilizada"><figcaption>Después</figcaption></figure>
+    </div>
+    <p style="text-align:center;margin-top:30px"><a class="btn btn-lime" href="https://wa.me/525588360142?text=Hola%2C%20quiero%20cotizar%20un%20impermeabilizante" target="_blank" rel="noopener">Cotizar mi azotea</a></p>
+  </div>
+</section>
+
+<section class="sec" id="servicios">
+  <div class="wrap">
+    <div class="sec-head rv-l">
+      <span class="kicker">Remodelación</span>
+      <h2>Mantenimiento y remodelación general</h2>
+      <p>El mismo equipo que fumiga tu casa también la renueva. Estos son nuestros trabajos de remodelación:</p>
+    </div>
+    <div class="grid-srv">
+      <article class="srv rv-l"><img src="img/alberca-1.jpg" alt="Remodelación de alberca y exteriores"><div class="cb"><h3>Remodelación general</h3><p>Renovamos tus espacios completos o por áreas, según tu presupuesto.</p></div></article>
+      <article class="srv rv-r"><img src="img/alberca-proceso-2.jpg" alt="Albañilería en obra"><div class="cb"><h3>Trabajos de albañilería</h3><p>Muros, aplanados, reparaciones y obra en general con acabado limpio.</p></div></article>
+      <article class="srv rv-l"><img src="img/azotea-despues.jpg" alt="Azotea impermeabilizada"><div class="cb"><h3>Impermeabilizante</h3><p>Protege tu azotea de goteras y humedad con aplicación profesional.</p></div></article>
+      <article class="srv rv-r"><img src="img/alberca-5.jpg" alt="Pintura y acabados de casa"><div class="cb"><h3>Pintura</h3><p>Pintura de interiores, exteriores y fachadas con acabado uniforme.</p></div></article>
+      <article class="srv rv-l"><img src="img/alberca-2.jpg" alt="Colocación de mosaico y loseta"><div class="cb"><h3>Colocación de loseta</h3><p>Pisos, azulejos y mosaicos bien nivelados, con juntas limpias.</p></div></article>
+      <article class="srv rv-r"><img src="img/casa.jpg" alt="Aluminio y vidrio en casa remodelada"><div class="cb"><h3>Aluminio y vidrio</h3><p>Ventanas, canceles y trabajos en aluminio y vidrio a la medida.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="proceso" style="background:var(--panel)">
+  <div class="wrap">
+    <div class="sec-head rv-l">
+      <span class="kicker">Proceso</span>
+      <h2>Así trabajamos</h2>
+    </div>
+    <div class="grid-steps">
+      <div class="step rv-l"><div class="n">01</div><h3>Cotiza por WhatsApp</h3><p>Cuéntanos qué necesitas y dónde es el trabajo.</p></div>
+      <div class="step rv-r"><div class="n">02</div><h3>Presupuesto claro</h3><p>Revisamos tu caso y te pasamos precio y tiempos, sin compromiso.</p></div>
+      <div class="step rv-l"><div class="n">03</div><h3>Manos a la obra</h3><p>Llegamos con todo el equipo y hacemos el trabajo completo.</p></div>
+      <div class="step rv-r"><div class="n">04</div><h3>Entrega limpia</h3><p>Dejamos todo terminado, limpio y listo para usarse.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="trabajos">
+  <div class="wrap">
+    <div class="sec-head rv-l">
+      <span class="kicker">Galería</span>
+      <h2>Galería de trabajos</h2>
+      <p>Fumigación, impermeabilización y remodelación en imágenes: trabajos reales y servicios.</p>
+    </div>
+    <div class="filtros rv-l">
+      <button class="fbtn on" data-f="todo">Todo</button>
+      <button class="fbtn" data-f="fumigacion">Fumigación</button>
+      <button class="fbtn" data-f="impermeabilizante">Impermeabilizante</button>
+      <button class="fbtn" data-f="albercas">Albercas y remodelación</button>
+    </div>
+    <div class="grid-gal" id="gal">
+      <figure data-cat="fumigacion" class="rv-l"><img loading="lazy" src="img/fumigacion-1.jpg" alt="Fumigación de exteriores"><figcaption>Fumigación de exteriores</figcaption></figure>
+      <figure data-cat="fumigacion" class="rv-r"><img loading="lazy" src="img/fumigacion-2.jpg" alt="Fumigación de áreas comunes"><figcaption>Áreas comunes</figcaption></figure>
+      <figure data-cat="fumigacion" class="rv-l"><img loading="lazy" src="img/fumigacion-3.jpg" alt="Fumigación de jardín"><figcaption>Jardín de casa</figcaption></figure>
+      <figure data-cat="fumigacion" class="rv-r"><img loading="lazy" src="img/fumigacion-4.jpg" alt="Fumigación de patio interior"><figcaption>Patio interior</figcaption></figure>
+      <figure data-cat="fumigacion" class="rv-l"><img loading="lazy" src="img/fumigacion-5.jpg" alt="Fumigación a domicilio"><figcaption>Servicio a domicilio</figcaption></figure>
+      <figure data-cat="impermeabilizante" class="rv-r"><img loading="lazy" src="img/azotea-antes.jpg" alt="Azotea antes de impermeabilizar"><figcaption>Azotea · Antes</figcaption></figure>
+      <figure data-cat="impermeabilizante" class="rv-l"><img loading="lazy" src="img/azotea-domo.jpg" alt="Azotea impermeabilizada con domo"><figcaption>Azotea · Después</figcaption></figure>
+      <figure data-cat="impermeabilizante" class="rv-r"><img loading="lazy" src="img/azotea-despues.jpg" alt="Impermeabilizante recién aplicado"><figcaption>Recién aplicado</figcaption></figure>
+      <figure data-cat="impermeabilizante" class="rv-l"><img loading="lazy" src="img/azotea-antes-2.jpg" alt="Azotea por impermeabilizar"><figcaption>Azotea por trabajar</figcaption></figure>
+      <figure data-cat="albercas" class="rv-r"><img loading="lazy" src="img/alberca-proceso-1.jpg" alt="Construcción de alberca"><figcaption>Alberca · En obra</figcaption></figure>
+      <figure data-cat="albercas" class="rv-l"><img loading="lazy" src="img/alberca-proceso-2.jpg" alt="Colocación de mosaico en alberca"><figcaption>Mosaico en proceso</figcaption></figure>
+      <figure data-cat="albercas" class="rv-r"><img loading="lazy" src="img/alberca-1.jpg" alt="Alberca terminada"><figcaption>Alberca terminada</figcaption></figure>
+      <figure data-cat="albercas" class="rv-l"><img loading="lazy" src="img/alberca-2.jpg" alt="Mosaico veneciano de alberca"><figcaption>Mosaico veneciano</figcaption></figure>
+      <figure data-cat="albercas" class="rv-r"><img loading="lazy" src="img/alberca-3.jpg" alt="Alberca con deck"><figcaption>Alberca con deck</figcaption></figure>
+      <figure data-cat="albercas" class="rv-l"><img loading="lazy" src="img/alberca-5.jpg" alt="Alberca y terraza"><figcaption>Alberca y terraza</figcaption></figure>
+      <figure data-cat="albercas" class="rv-r"><img loading="lazy" src="img/casa.jpg" alt="Casa remodelada con ventanales"><figcaption>Casa remodelada</figcaption></figure>
+      <figure data-cat="fumigacion" class="rv-l"><img loading="lazy" src="img/fumigacion-cocina.webp" alt="Fumigación de cocina"><figcaption>Cocina libre de plagas</figcaption></figure>
+      <figure data-cat="fumigacion" class="rv-r"><img loading="lazy" src="img/fumigacion-negocio.webp" alt="Fumigación de negocios"><figcaption>Negocios y locales</figcaption></figure>
+      <figure data-cat="fumigacion" class="rv-l"><img loading="lazy" src="img/fumigacion-termita.webp" alt="Tratamiento contra termitas"><figcaption>Contra termitas</figcaption></figure>
+      <figure data-cat="fumigacion" class="rv-r"><img loading="lazy" src="img/fumigacion-jardin.webp" alt="Fumigación de jardín con alberca"><figcaption>Jardín y alberca</figcaption></figure>
+      <figure data-cat="fumigacion" class="rv-l"><img loading="lazy" src="img/fumigacion-sala.webp" alt="Fumigación de interiores"><figcaption>Interiores</figcaption></figure>
+      <figure data-cat="fumigacion" class="rv-r"><img loading="lazy" src="img/fumigacion-bano.webp" alt="Fumigación de baños"><figcaption>Baños</figcaption></figure>
+      <figure data-cat="fumigacion" class="rv-l"><img loading="lazy" src="img/fumigacion-equipo.webp" alt="Equipo de fumigación"><figcaption>Nuestro equipo</figcaption></figure>
+      <figure data-cat="fumigacion" class="rv-r"><img loading="lazy" src="img/fumigacion-nebulizacion.webp" alt="Nebulización"><figcaption>Nebulización</figcaption></figure>
+      <figure data-cat="fumigacion" class="rv-l"><img loading="lazy" src="img/fumigacion-exterior-casa.webp" alt="Fumigación exterior de casa"><figcaption>Exterior de casa</figcaption></figure>
+      <figure data-cat="albercas" class="rv-r"><img loading="lazy" src="img/remod-cocina.webp" alt="Cocina integral remodelada"><figcaption>Cocina integral</figcaption></figure>
+      <figure data-cat="albercas" class="rv-l"><img loading="lazy" src="img/remod-bano.webp" alt="Baño remodelado"><figcaption>Baño remodelado</figcaption></figure>
+      <figure data-cat="albercas" class="rv-r"><img loading="lazy" src="img/remod-sala-remodelada.webp" alt="Sala remodelada"><figcaption>Sala renovada</figcaption></figure>
+      <figure data-cat="albercas" class="rv-l"><img loading="lazy" src="img/remod-fachada.webp" alt="Fachada remodelada"><figcaption>Fachada</figcaption></figure>
+      <figure data-cat="albercas" class="rv-r"><img loading="lazy" src="img/remod-pintura.webp" alt="Trabajos de pintura"><figcaption>Pintura</figcaption></figure>
+      <figure data-cat="albercas" class="rv-l"><img loading="lazy" src="img/remod-pintura-exterior.webp" alt="Pintura exterior"><figcaption>Pintura exterior</figcaption></figure>
+      <figure data-cat="albercas" class="rv-r"><img loading="lazy" src="img/remod-impermeabilizante.webp" alt="Aplicación de impermeabilizante"><figcaption>Aplicando impermeabilizante</figcaption></figure>
+      <figure data-cat="albercas" class="rv-l"><img loading="lazy" src="img/remod-techo.webp" alt="Azotea impermeabilizada"><figcaption>Azotea protegida</figcaption></figure>
+      <figure data-cat="albercas" class="rv-r"><img loading="lazy" src="img/remod-loseta.webp" alt="Colocación de loseta"><figcaption>Loseta nueva</figcaption></figure>
+      <figure data-cat="albercas" class="rv-l"><img loading="lazy" src="img/remod-bano-instalacion.webp" alt="Instalación de azulejo"><figcaption>Instalación de azulejo</figcaption></figure>
+      <figure data-cat="albercas" class="rv-r"><img loading="lazy" src="img/remod-cocina-instalacion.webp" alt="Instalación de cocina"><figcaption>Instalación de cocina</figcaption></figure>
+      <figure data-cat="albercas" class="rv-l"><img loading="lazy" src="img/remod-albanileria.webp" alt="Trabajos de albañilería"><figcaption>Albañilería</figcaption></figure>
+      <figure data-cat="albercas" class="rv-r"><img loading="lazy" src="img/remod-yeso.webp" alt="Aplanado de muros"><figcaption>Aplanados</figcaption></figure>
+      <figure data-cat="albercas" class="rv-l"><img loading="lazy" src="img/remod-ventana-vidrio.webp" alt="Instalación de vidrio"><figcaption>Vidrio y canceles</figcaption></figure>
+      <figure data-cat="albercas" class="rv-r"><img loading="lazy" src="img/remod-aluminio.webp" alt="Aluminio y vidrio"><figcaption>Aluminio a la medida</figcaption></figure>
+      <figure data-cat="albercas" class="rv-l"><img loading="lazy" src="img/remod-herramientas.webp" alt="Herramientas de trabajo"><figcaption>Nuestras herramientas</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq" style="background:var(--panel)">
+  <div class="wrap">
+    <div class="sec-head rv-l">
+      <span class="kicker">Dudas</span>
+      <h2>Preguntas frecuentes</h2>
+    </div>
+    <div class="faq rv-l">
+      <div class="faq-item"><button class="faq-q">¿Cuánto cuesta una fumigación o una remodelación?<span>+</span></button><div class="faq-a"><p>Depende del tamaño del lugar y del trabajo que se necesite. Mándanos un WhatsApp con los datos de tu caso y te damos tu presupuesto sin compromiso.</p></div></div>
+      <div class="faq-item"><button class="faq-q">¿Atienden casas y también negocios?<span>+</span></button><div class="faq-a"><p>Sí. Trabajamos en casas, negocios, restaurantes, jardines y áreas comunes de fraccionamientos y edificios.</p></div></div>
+      <div class="faq-item"><button class="faq-q">¿Necesito salir de mi casa durante la fumigación?<span>+</span></button><div class="faq-a"><p>Depende del tratamiento que tu caso necesite. Al cotizar te explicamos las indicaciones para ti, tu familia y tus mascotas.</p></div></div>
+      <div class="faq-item"><button class="faq-q">¿Cómo empiezo mi cotización?<span>+</span></button><div class="faq-a"><p>Escríbenos por WhatsApp o llena el formulario de esta página: se arma tu mensaje automáticamente y solo tienes que enviarlo.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contacto">
+  <div class="wrap">
+    <div class="sec-head rv-l">
+      <span class="kicker">Contacto</span>
+      <h2>Pide tu cotización</h2>
+    </div>
+    <div class="contact">
+      <div class="rv-l">
+        <p style="color:var(--mut);margin-bottom:8px">WhatsApp</p>
+        <a class="big-wa" href="https://wa.me/525588360142" target="_blank" rel="noopener">55 8836 0142</a>
+        <p style="color:var(--mut);margin:16px 0 24px">Atendemos casas, negocios, jardines y áreas comunes. Cotización sin compromiso.</p>
+        <a class="btn btn-wa" href="https://wa.me/525588360142?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20sus%20servicios" target="_blank" rel="noopener">💬 Escríbenos por WhatsApp</a>
+        <p style="margin-top:28px"><a href="hogartotal.apk" download style="color:var(--lime);font-weight:700">📲 Descargar la app de HogarTotal</a></p>
+      </div>
+      <form id="formPedido" class="rv-r">
+        <div class="field">
+          <label for="fNombre">Tu nombre</label>
+          <input id="fNombre" type="text" placeholder="¿Cómo te llamas?" required>
+        </div>
+        <div class="field">
+          <label for="fProducto">¿Qué servicio necesitas?</label>
+          <select id="fProducto">
+            <option>Fumigación</option>
+            <option>Impermeabilizante</option>
+            <option>Remodelación general</option>
+            <option>Albañilería</option>
+            <option>Pintura</option>
+            <option>Colocación de loseta</option>
+            <option>Aluminio y vidrio</option>
+            <option>Otro servicio</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="fMensaje">Cuéntanos tu caso</label>
+          <textarea id="fMensaje" rows="4" placeholder="Ej. Necesito fumigar una casa de dos pisos / Mi azotea tiene goteras"></textarea>
+        </div>
+        <button class="btn btn-wa" type="submit" style="width:100%;justify-content:center">Enviar por WhatsApp</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong>HogarTotal</strong> · Fumigación y Remodelación</p>
+    <p style="margin-top:6px">WhatsApp 55 8836 0142</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/525588360142?text=Hola%2C%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+<div class="lightbox" id="lightbox"><img id="lbImg" src="" alt="Foto ampliada"></div>
+
+<script>
+var hdr = document.getElementById('hdr');
+addEventListener('scroll', function(){ hdr.classList.toggle('scrolled', scrollY > 40); }, { passive: true });
+
+var slides = document.querySelectorAll('.slide'), dotsBox = document.getElementById('dots'), cur = 0, timer = null;
+slides.forEach(function(_, i){
+  var b = document.createElement('button');
+  b.className = 'dot' + (i === 0 ? ' on' : '');
+  b.setAttribute('aria-label', 'Foto ' + (i + 1));
+  b.addEventListener('click', function(){ show(i); restart(); });
+  dotsBox.appendChild(b);
+});
+function show(i){
+  slides[cur].classList.remove('on'); dotsBox.children[cur].classList.remove('on');
+  cur = i;
+  slides[cur].classList.add('on'); dotsBox.children[cur].classList.add('on');
+}
+function restart(){ clearInterval(timer); timer = setInterval(function(){ show((cur + 1) % slides.length); }, 5200); }
+restart();
+
+var io = ('IntersectionObserver' in window) ? new IntersectionObserver(function(es){
+  es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: .12 }) : null;
+document.querySelectorAll('.rv-l, .rv-r').forEach(function(el){ if (io) io.observe(el); else el.classList.add('in'); });
+
+document.querySelectorAll('.fbtn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('.fbtn').forEach(function(b){ b.classList.remove('on'); });
+    btn.classList.add('on');
+    var f = btn.getAttribute('data-f');
+    document.querySelectorAll('#gal figure').forEach(function(fig){
+      fig.classList.toggle('hide', f !== 'todo' && fig.getAttribute('data-cat') !== f);
+    });
+  });
+});
+
+var lb = document.getElementById('lightbox'), lbImg = document.getElementById('lbImg');
+document.querySelectorAll('.grid-gal img, .ad img').forEach(function(img){
+  img.addEventListener('click', function(){ lbImg.src = img.src; lb.classList.add('on'); });
+});
+lb.addEventListener('click', function(){ lb.classList.remove('on'); lbImg.src = ''; });
+
+document.querySelectorAll('.faq-item').forEach(function(item){
+  var q = item.querySelector('.faq-q'), a = item.querySelector('.faq-a');
+  q.addEventListener('click', function(){
+    var open = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(function(o){ o.classList.remove('open'); o.querySelector('.faq-a').style.maxHeight = '0px'; });
+    if (!open) { item.classList.add('open'); a.style.maxHeight = a.scrollHeight + 'px'; }
+  });
+});
+
+document.getElementById('formPedido').addEventListener('submit', function(ev){
+  ev.preventDefault();
+  var nombre = document.getElementById('fNombre').value.trim();
+  var servicio = document.getElementById('fProducto').value;
+  var mensaje = document.getElementById('fMensaje').value.trim();
+  var texto = 'Hola, soy ' + nombre + '. Me interesa: ' + servicio + '.' + (mensaje ? ' ' + mensaje : '');
+  open('https://wa.me/525588360142?text=' + encodeURIComponent(texto), '_blank');
+});
+
+if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js').catch(function(){}); }
+</script>
+</body>
+</html>
